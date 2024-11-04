@@ -51,7 +51,7 @@ def get_filters():
             print("Invalid day name. Please try again.")
     print(day)
 
-    print('-'*40)
+    print('_'*40)
     return city, month, day
     
 
@@ -107,7 +107,7 @@ def time_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('_'*40)
     
 
 def station_stats(df):
@@ -137,7 +137,7 @@ def station_stats(df):
     
     
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('_'*40)
 
 
 def trip_duration_stats(df):
@@ -158,7 +158,7 @@ def trip_duration_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('_'*40)
 
 
 def user_stats(df):
@@ -197,7 +197,7 @@ def user_stats(df):
     
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('_'*40)
     
 def view_data(df):
     
