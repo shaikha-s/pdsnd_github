@@ -15,7 +15,8 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print(print("""greetings!! welcome to the python bikeshare project, get ready to explore the bikeshare data
+"""))
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
      
     while True:
@@ -50,7 +51,7 @@ def get_filters():
             print("Invalid day name. Please try again.")
     print(day)
 
-    print('-'*40)
+    print('_'*40)
     return city, month, day
     
 
@@ -106,7 +107,7 @@ def time_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('_'*40)
     
 
 def station_stats(df):
@@ -136,7 +137,7 @@ def station_stats(df):
     
     
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('_'*40)
 
 
 def trip_duration_stats(df):
@@ -157,7 +158,7 @@ def trip_duration_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('_'*40)
 
 
 def user_stats(df):
@@ -196,7 +197,7 @@ def user_stats(df):
     
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('_'*40)
     
 def view_data(df):
     
@@ -226,6 +227,8 @@ def main():
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
+            print("thank for exploring the bikeshare data! goodbye")
+
             break
 
 
